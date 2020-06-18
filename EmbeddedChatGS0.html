@@ -1,10 +1,10 @@
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #5E6073;
+		background-color: #F1AF15;
 		font-family: "Arial", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #5E6073;
+		outline: 1px solid #F1AF15;
 	}
 </style>
 
@@ -33,17 +33,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://gs0.salesforce.com',
-			'https://infalliblela.secure.force.com',
+			'https://infallibleliveagent-dev-ed.my.salesforce.com',
+			'https://infalliblela-developer-edition.na172.force.com',
 			gslbBaseURL,
-			'00DB0000000U4Fv',
-			'Embedded_Chat',
+			'00D5w000003yOqA',
+			'Embedded_Service',
 			{
-				baseLiveAgentContentURL: 'https://c.gla3-phx.gus.salesforce.com/content',
-				deploymentId: '572B00000001VHZ',
-				buttonId: '573B00000001eWz',
-				baseLiveAgentURL: 'https://d.gla3-phx.gus.salesforce.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IB00000004R9nMAE_172c42a4cb7',
+				baseLiveAgentContentURL: 'https://c.la1-c2-ia5.salesforceliveagent.com/content',
+				deploymentId: '5725w0000004kr2',
+				buttonId: '5735w0000004ljg',
+				baseLiveAgentURL: 'https://d.la1-c2-ia5.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I5w000000YIJ6EAO_1724c0ac38e',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -51,7 +51,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://gs0.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://infallibleliveagent-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
