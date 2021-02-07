@@ -12,7 +12,7 @@
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = 'fr'; //For example, enter 'en' or 'en-US'
+		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
 		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
@@ -33,17 +33,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://forcecom-3d5.my.salesforce.com',
-			'https://spring21infallible.secure.force.com',
+			'https://d4x000006tdgdeaa-dev-ed.my.salesforce.com',
+			'https://infallibletechie-developer-edition.na150.force.com',
 			gslbBaseURL,
-			'00DB0000000ceBJ',
-			'Embedded_Service',
+			'00D4x000006tdgd',
+			'Chat',
 			{
-				baseLiveAgentContentURL: 'https://c.gla3-phx.gus.salesforce.com/content',
-				deploymentId: '572B0000000HAQN',
-				buttonId: '573B0000000HAcv',
-				baseLiveAgentURL: 'https://d.gla3-phx.gus.salesforce.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IB00000008fLSMAY_176f892bfa4',
+				baseLiveAgentContentURL: 'https://c.la3-c1-ia4.salesforceliveagent.com/content',
+				deploymentId: '5724x000000koUg',
+				buttonId: '5734x000000kp4E',
+				baseLiveAgentURL: 'https://d.la3-c1-ia4.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I4x000000cHihEAE_1777d68244d',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -51,7 +51,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://forcecom-3d5.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://d4x000006tdgdeaa-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
