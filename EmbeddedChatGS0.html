@@ -51,16 +51,24 @@
 		);
 	};
 
-	if (!window.embedded_svc) {
-		var s = document.createElement('script');
-		s.setAttribute('src', 'https://infallibletechie5-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-		s.onload = function() {
-			initESW(null);
-		};
-		document.body.appendChild(s);
-	} else {
-		initESW('https://service.force.com');
+	function loadChat() {
+	
+		console.log( 'Inside Load Chat' );
+	
+		if (!window.embedded_svc) {
+			var s = document.createElement('script');
+			s.setAttribute('src', 'https://infallibletechie5-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+			s.onload = function() {
+				initESW(null);
+			};
+			document.body.appendChild(s);
+		} else {
+			initESW('https://service.force.com');
+		}
+	
 	}
 </script>
+
+<button onclick="loadChat()" >Click to Chat</button>
 </div>
 </html>
